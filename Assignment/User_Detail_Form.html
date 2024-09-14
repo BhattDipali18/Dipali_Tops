@@ -6,30 +6,107 @@
 <style>
 		.innerdiv
 		{
-			width:50%;
+			
 			background-color:yellowgreen;
-			align:center;
-			text-align:center;
+			width:85%;
+			height:50px;
+			 align-items: center;
+			  justify-content: center;
+			  margin:0 auto;
+			 
+			  outline: ridge 3px white;
+			  
+			  
 		}
 		.outerdiv
 		{
-			background-color:green;
+			background-color:lightgreen;
 			width:50%;
 			align:center;
 			float:left;
 			border:5px;
 			display:block;
 			outline: solid 1px black;
-			margin-inline:auto;
+			
+		}
+		.square
+		{
+			  width:50%;
+			  align-items: center;
+			  justify-content: center;
+			  margin:auto;
+			  background-color:green;
+		}
+		.textsize
+		{
+			
+			align-items:center;
+			height:30px;
+			width:70%;
+			float:right;
+			margin:10px;
+			
+		}
+		.lablesize
+		{
+			
+			font-size:15px;
+			float:left;
+			margin:10px;
 			
 		}
 </style>
 </head>
 <body>
-		<form>
-		<div class=outerdiv>
-			Name<input type=text name=flname value="First and Last name" required class=innerdiv><br>
-			Name<input type=text name=flname value="First and Last name" required class=innerdiv><br>
+		<form method=post>
+		
+		<div class=square>
+		<h3 style="color:white; margin:20px;">Step 1: Your Details</h3>
+			<div class=innerdiv>
+			<h3 class=lablesize>Name </h3>   <input class=textsize type=text name=flname placeholder="First and Last name" required>
+			</div>
+			<div></div>
+			<div class=innerdiv>
+			<h3 class=lablesize>Email </h3>  <input class=textsize type=Email name=flname placeholder="example@gmail.com" required><br>
+			</div>
+			<div></div>
+			<div class=innerdiv>
+			<h3 class=lablesize>phone </h3>  <input class=textsize type=phone name=flname placeholder="Eg:+91123456789" required><br>
+			</div>
+			<div></div>
+		<h3 style="color:white; margin:20px;">Step 2: Delivery Address</h3>
+			<div class=innerdiv>
+			<h3 class=lablesize>Address </h3>   <textarea class=textsize required></textarea>
+			</div>
+			<div></div>
+			<div class=innerdiv>
+			<h3 class=lablesize>Post Code </h3>   <input class=textsize type=text name=flname required>
+			</div>
+			<div></div>
+			<div class=innerdiv>
+			<h3 class=lablesize>Country </h3>   <input class=textsize type=text name=flname placeholder="First and Last name" required>
+			</div>
+			<div></div>
+			<h3 style="color:white; margin:20px;">Step 3: Card Details</h3>
+			<div class=innerdiv>
+			<h3 class=lablesize>Card Type </h3> <br>  <input type=radio name=r1>Visa
+											<input  type=radio name=r1>AmEx
+											<input  type=radio name=r1>Mastercard
+			</div>
+			<div></div>
+			<div class=innerdiv>
+			<h3 class=lablesize>Card Number </h3>  <input class=textsize type=text required><br>
+			</div>
+			<div></div>
+			<div class=innerdiv>
+			<h3 class=lablesize>Security Code </h3>  <input class=textsize type=text required><br>
+			</div>
+			<div></div>
+			<div class=innerdiv>
+			<h3 class=lablesize>Name on Card </h3>  <input class=textsize type=text required><br>
+			</div>
+			<div></div>
+			<input style="align:center; background-color:black; margin:10px; color:white;" type=submit value="BUY IT!">
 		</div>
 		</form>
 		
